@@ -1,0 +1,12 @@
+[tool.ruff]
+line-length = 79
+lint.select = [
+    "E",
+    "F",
+    "W",
+    "C90",
+]
+exclude = ["**/migrations/**", "**/venv/**", "**/__pycache__/**"]
+lint.per-file-ignores = { 
+    "backend/kittygram_backend/settings.py" = ["E501"] 
+}
